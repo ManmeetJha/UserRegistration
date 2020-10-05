@@ -28,6 +28,11 @@ public class userRegistration {
 		System.out.println("Enter valid Phone number");
 		String phone = input.next();
 		System.out.println(Pattern.matches("(0|91)?[7-9][0-9]{9}", phone));
+		
+		//UC5-UC8
+		System.out.println("Enter valid Password");
+		String pass=input.next();
+		System.out.println(Pattern.matches("^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.[@#$%^&_+=()])(?=\\S+$).{8,}$",pass));
 
 	}
 
