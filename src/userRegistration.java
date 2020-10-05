@@ -22,17 +22,8 @@ public class userRegistration {
 		// UC3
 		System.out.println("Enter valid e-mail ID");
 		String email = input.next();
-		System.out.println(Pattern.matches("^[a-zA-Z0-9-]+(\\.[a-zA-Z0-9-]+)*@[a-zA-Z0-9-]+(\\.[a-zA-Z0-9-]+)+$", email));
-
-		// UC4
-		System.out.println("Enter valid Phone number");
-		String phone = input.next();
-		System.out.println(Pattern.matches("(0|91)?[7-9][0-9]{9}", phone));
-		
-		//UC5-UC8
-		System.out.println("Enter valid Password");
-		String pass=input.next();
-		System.out.println(Pattern.matches("^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.[@#$%^&_+=()])(?=\\S+$).{8,}$",pass));
+		System.out
+				.println(Pattern.matches("^[a-zA-Z0-9-]+(\\.[a-zA-Z0-9-]+)*@[a-zA-Z0-9-]+(\\.[a-zA-Z0-9-]+)+$", email));
 
 	}
 
