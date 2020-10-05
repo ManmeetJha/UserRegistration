@@ -13,8 +13,12 @@ public class userRegistration {
 		System.out.println("Enter the first name");
 		String name = input.next();
 		System.out.println(Pattern.matches("^[A-Z](?:[a-zA-Z]+){2}$", name));
-		input.close();
 
+		// UC2
+		System.out.println("Enter the last name");
+		String lname = input.next();
+		System.out.println(Pattern.matches("^[A-Z](?:[a-zA-Z]+){2}$", lname));
+		input.close();
 	}
 
 }
